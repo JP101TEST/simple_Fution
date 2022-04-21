@@ -63,7 +63,6 @@ script = ExtResource( 4 )
 text_Set_Lable = "DECREASE"
 
 [node name="PRINT" parent="." instance=ExtResource( 5 )]
-visible = false
 margin_left = 194.0
 margin_top = 286.0
 margin_right = 194.0
