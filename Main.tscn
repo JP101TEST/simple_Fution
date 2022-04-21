@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Sprite.gd" type="Script" id=1]
+[ext_resource path="res://font/lambda-font/Lambda-vme1A.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://image/GUI/botton.png" type="Texture" id=3]
+[ext_resource path="res://Object/Botton/Button_c_DECREASE.gd" type="Script" id=4]
+[ext_resource path="res://Object/Botton/Button_c.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Object/Botton/Button_c_print.gd" type="Script" id=6]
+[ext_resource path="res://Object/Botton/Button_c_SAVE.gd" type="Script" id=7]
+[ext_resource path="res://Object/Botton/Button_c_LORD.gd" type="Script" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="Main" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 320, 64 )
+scale = Vector2( 13.12, 5.76 )
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+
+[node name="Label2" type="Label" parent="Sprite"]
+margin_left = -12.8
+margin_top = -5.8
+margin_right = 369.2
+margin_bottom = 52.2
+rect_scale = Vector2( 0.0672414, 0.176 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+valign = 1
+
+[node name="ADD" parent="." instance=ExtResource( 5 )]
+margin_left = 194.0
+margin_top = 130.0
+margin_right = 194.0
+margin_bottom = 130.0
+text_Set_Lable = "ADD"
+
+[node name="SAVE" parent="." instance=ExtResource( 5 )]
+margin_left = 762.0
+margin_top = 11.0
+margin_right = 762.0
+margin_bottom = 11.0
+script = ExtResource( 7 )
+text_Set_Lable = "SAVE"
+
+[node name="LORD" parent="." instance=ExtResource( 5 )]
+margin_left = 762.0
+margin_top = 94.0
+margin_right = 762.0
+margin_bottom = 94.0
+script = ExtResource( 8 )
+text_Set_Lable = "LORD"
+
+[node name="DECREASE" parent="." instance=ExtResource( 5 )]
+margin_left = 194.0
+margin_top = 208.0
+margin_right = 194.0
+margin_bottom = 208.0
+script = ExtResource( 4 )
+text_Set_Lable = "DECREASE"
+
+[node name="PRINT" parent="." instance=ExtResource( 5 )]
+visible = false
+margin_left = 194.0
+margin_top = 286.0
+margin_right = 194.0
+margin_bottom = 286.0
+script = ExtResource( 6 )
+text_Set_Lable = "PRINT"
