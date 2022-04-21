@@ -7,7 +7,11 @@ func _ready():
 	#print(GameData.text_test)
 	
 func _on_TB_pressed():
-	GameData.run_stop=0
-	GameData.text_test="Fun is not ready"
-	#var save_file=File.new()
-	#save_file.open("res://save_game.json",_File.WRITE)
+	save_game()
+	
+func save_game():
+	GameData.save_func_slot_1()
+	var save_game_file = File.new()
+	save_game_file.open(GameData.save_location_slot_1, File.WRITE)
+	save_game_file.store_line(to_json(GameData.save_slot_1))
+	save_game_file.close()

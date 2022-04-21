@@ -12,6 +12,16 @@ var score:int =0
 
 const MIN_SCORE:int = 0
 
+var save_slot_1 = {
+	"run_stop" : run_stop,
+	"score" : score
+	}
+func save_func_slot_1():
+	save_slot_1.run_stop=run_stop
+	save_slot_1.score=score
+
+var save_location_slot_1:String="res://Save/save_game.txt";
+#const save_slot_1="res://Save/save_game.txt"
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
