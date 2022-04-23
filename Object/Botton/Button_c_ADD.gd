@@ -14,7 +14,6 @@ func _ready():
 #func _process(delta):
 #	pass
 
-
 func _on_TB_pressed():
 	if GameData.run_stop==0:
 		GameData.run_stop=1
