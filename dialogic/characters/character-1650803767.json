@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "[name]",
+	"display_name_bool": true,
+	"id": "character-1650803767.json",
+	"mirror_portraits": false,
+	"name": "NPC",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://image/NPC/Nob_detail.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

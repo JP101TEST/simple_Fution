@@ -7,5 +7,9 @@ func _ready():
 	#print(GameData.text_test)
 	
 func _on_TB_pressed():
-	ch
-
+	if intt==0:
+		get_node("../Main").hide()
+		intt=1
+	else:
+		get_node("../Main").show()
+		intt=0

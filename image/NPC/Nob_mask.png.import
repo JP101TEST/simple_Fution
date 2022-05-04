@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/Nob_mask.png-72e0f0c4586abdaa60e6b31143b40e3d.res"
+
+[deps]
+
+source_file="res://image/NPC/Nob_mask.png"
+dest_files=[ "res://.import/Nob_mask.png-72e0f0c4586abdaa60e6b31143b40e3d.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

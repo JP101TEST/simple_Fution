@@ -21,3 +21,4 @@ func _on_TB_pressed():
 	else:
 		GameData.score+=1
 		#print(GameData.score)
+	print(text_Set_Lable)
