@@ -9,6 +9,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 var dwd=0
 var dw=true
+var tes="Good job"
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
